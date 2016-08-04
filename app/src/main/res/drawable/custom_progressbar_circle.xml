@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<item android:id="@android:id/background">-->
+        <!--<shape-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:shape="rectangle">-->
+
+            <!--<corners android:radius="5dp" />-->
+            <!--<gradient-->
+                <!--android:startColor="#6f7754"-->
+                <!--android:endColor="#858762"-->
+                <!--android:angle="90"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item android:id="@android:id/secondaryProgress">-->
+        <!--<clip>-->
+            <!--<shape-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:shape="rectangle">-->
+
+                <!--<corners android:radius="5dp" />-->
+                <!--<gradient-->
+                    <!--android:startColor="#ffba00"-->
+                    <!--android:endColor="#af6c03"-->
+                    <!--android:angle="90"/>-->
+            <!--</shape>-->
+        <!--</clip>-->
+    <!--</item>-->
+
+    <!--<item android:id="@android:id/progress">-->
+        <!--<clip>-->
+            <!--<shape-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:shape="rectangle">-->
+
+                <!--<corners-->
+                    <!--android:radius="5dp" />-->
+                <!--<gradient-->
+                    <!--android:startColor="#ffba00"-->
+                    <!--android:endColor="#af6c03"-->
+                    <!--android:angle="90" />-->
+            <!--</shape>-->
+        <!--</clip>-->
+        <!--</item>-->
+    <!--</layer-list>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Define the background properties like color etc -->
+    <item android:id="@android:id/background">
+        <shape android:shape="oval">
+            <solid android:color="#00f"/>
+            <size
+                android:width="15dp"
+                android:height="15dp"/>
+        </shape>
+    </item>
+
+    <!-- Define the progress properties like start color, end color etc -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="oval">
+                <!-- transparent stroke = larger_circle_size - smaller_circle_size -->
+                <stroke android:color="@android:color/transparent"
+                        android:width="5dp"/>
+                <solid android:color="#f00"/>
+                <size
+                    android:width="10dp"
+                    android:height="10dp"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>
